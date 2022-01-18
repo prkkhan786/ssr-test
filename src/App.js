@@ -9,6 +9,7 @@ function App() {
   const handleBtnClick = () => {
     setCount((prev) => prev + 1);
   };
+  console.log(process.env);
   return (
     <div>
       <h1>Hello world</h1>
