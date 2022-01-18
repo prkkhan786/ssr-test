@@ -12,6 +12,8 @@ function App() {
     setCount((prev) => prev + 1);
   };
   console.log(process.env);
+  const res = process.env.REACT_APP_TEST + process.env.REACT_APP_TEST1;
+  console.log("res", res);
   return (
     <div>
       <h1>Hello world</h1>
