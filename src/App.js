@@ -3,7 +3,9 @@ function App() {
   const SECRET_KEY = "my key";
   const [count, setCount] = useState(0);
   useEffect(() => {
-    fetch("/posts", { SECRET_KEY }).then((res) => console.log(""));
+    fetch(process.env.REACT_APP_SECRET_KEY, { SECRET_KEY }).then((res) =>
+      console.log("")
+    );
   }, []);
 
   const handleBtnClick = () => {
